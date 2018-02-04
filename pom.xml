@@ -4,4 +4,54 @@
   <artifactId>HelloWorlldProject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Demo</name>
+  
+  <properties>
+	<suiteXmlFile>testng.xml</suiteXmlFile>
+	<skipTests>false</skipTests>
+  </properties> 
+  
+<dependencies>
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.8.1</version>
+</dependency>
+  
+<dependency>
+  <groupId>org.testng</groupId>
+  <artifactId>testng</artifactId>
+  <version>6.8</version>
+  <scope>test</scope>
+</dependency>
+ </dependencies>
+ 
+  <build>
+    <!-- To define the plugin version in your parent POM -->
+    <pluginManagement>
+      <plugins>
+	      <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-compiler-plugin</artifactId>
+	        <version>3.7.0</version>
+	        <configuration>
+	          <source>1.8</source>
+	          <target>1.8</target>
+	        </configuration>
+	      </plugin>
+	      
+	      <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-surefire-plugin</artifactId>
+	        <version>2.20.1</version>
+	        <configuration>
+	          <suiteXmlFiles>
+	            <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+	          </suiteXmlFiles>
+	        </configuration>
+	      </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+
 </project>
