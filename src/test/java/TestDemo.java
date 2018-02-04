@@ -1,3 +1,4 @@
+import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -10,7 +11,7 @@ public class TestDemo {
     	//System.setProperty("webdriver.firefox.marionette","C:\\Users\\miwang\\AppData\\Local\\Mozilla Firefox\\firefox.exe");
 		//WebDriver driver = new FirefoxDriver();
 		//comment the above 2 lines and uncomment below 2 lines to use Chrome
-		System.setProperty("webdriver.chrome.driver","D:\\Software\\Application\\chrome.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\miwang\\Desktop\\DevOps\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
     	
         String baseUrl = "http://demo.guru99.com/selenium/newtours/";
