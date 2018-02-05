@@ -11,7 +11,9 @@ public class TestDemo {
     	//System.setProperty("webdriver.firefox.marionette","C:\\Users\\miwang\\AppData\\Local\\Mozilla Firefox\\firefox.exe");
 		//WebDriver driver = new FirefoxDriver();
 		//comment the above 2 lines and uncomment below 2 lines to use Chrome
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\miwang\\Desktop\\DevOps\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver","C:\\Users\\miwang\\Desktop\\DevOps\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/workspace/helloworld_compile/chromedriver.exe");
+		
 		WebDriver driver = new ChromeDriver();
     	
         String baseUrl = "http://demo.guru99.com/selenium/newtours/";
