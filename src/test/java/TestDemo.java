@@ -12,7 +12,7 @@ public class TestDemo {
 		//WebDriver driver = new FirefoxDriver();
 		//comment the above 2 lines and uncomment below 2 lines to use Chrome
 		//System.setProperty("webdriver.chrome.driver","C:\\Users\\miwang\\Desktop\\DevOps\\chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/workspace/helloworld_compile/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/workspace/chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
     	
