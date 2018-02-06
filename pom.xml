@@ -39,10 +39,35 @@
 	        </configuration>
 	      </plugin>
 	      
-
+	        <plugin>
+	          <groupId>org.apache.maven.plugins</groupId>
+	          <artifactId>maven-pmd-plugin</artifactId>
+	          <version>3.9.0</version>
+	        </plugin>
       </plugins>
     </pluginManagement>
-  </build>
+    
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.9.0</version>
+      </plugin>
+    </plugins> 
 
+  </build>
+  
+  <!-- To use the report goals in your POM or parent POM -->
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.9.0</version>
+      </plugin>
+
+    </plugins>
+  </reporting>
+  
 
 </project>
